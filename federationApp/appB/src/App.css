@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  border: dashed 5px orange;
+}
+
+header {
+    height: 50px;
+    background-color: rgb(255, 70, 23);
+    display: flex;
+    align-items: center;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 50px;
+}
+a:hover{
+    color: rgb(175, 183, 255)
+}
+
+.orangeBox{
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+}

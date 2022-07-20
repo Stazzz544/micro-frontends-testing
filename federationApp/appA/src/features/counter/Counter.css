@@ -1,0 +1,40 @@
+.counter{
+    width: 300px;
+    padding: 30px;
+    margin: 30px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+
+}
+
+.counter__plus, .counter__minus{
+    font-size: 50px;
+    background: orangered;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.counter__btn-wrapper{
+    margin-top: 30px;
+    display: flex;
+    column-gap: 20px;
+}
+
+.counter__title{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.counter__result{
+    text-align: center;
+    margin-top: 5px;
+}

@@ -1,0 +1,13 @@
+.header {
+    height: 50px;
+    background-color: rgb(255, 70, 23);
+    display: flex;
+    align-items: center;
+}
+.header__title {
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 50px;
+    letter-spacing: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+}
