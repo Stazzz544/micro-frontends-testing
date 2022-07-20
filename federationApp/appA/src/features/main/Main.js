@@ -4,6 +4,7 @@ import About from "../discription/Discription";
 import "./Main.css";
 import ErrorBoundary from "./../../ErrorBoundary";
 import { Routes, Route } from "react-router-dom";
+import Users from "../users/Users";
 // import Remote from "RemoteTwo/App";
 
 const RemoteApp = React.lazy(() => import("Remote/Info").then(module => module));
@@ -22,7 +23,7 @@ const RemoteWrapper = ({ children }) => (
 export const Main = () => {
   return (
     <div className="main">
-      <Menu />
+      <Menu someText={'Text from props'}/>
       <div className="main__remote-app-wrapper">
         <Routes>
           <Route path="/" element={<About />} />
@@ -36,7 +37,7 @@ export const Main = () => {
               </RemoteWrapper>
             }
           />
-          <Route
+          {AppC && <Route
             path="app_two"
             element={
               <RemoteWrapper>
@@ -45,7 +46,8 @@ export const Main = () => {
                 </React.Suspense>
               </RemoteWrapper>
             }
-          />
+          />}
+          <Route path="/users" element={<Users />} />
         </Routes>
       </div>
     </div>

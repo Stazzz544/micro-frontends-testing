@@ -6,7 +6,7 @@ import Info from "./Info";
 export const App = () => {
   return (
   <div>
-    <Info/>
+    <Info someProps={'some text from props...'}/>
   </div>
   )
 };
